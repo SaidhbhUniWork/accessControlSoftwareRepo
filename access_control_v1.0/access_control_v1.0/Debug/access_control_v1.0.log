@@ -1,2 +1,37 @@
-﻿  SystemAccessLogger.cpp
-  access_control_v1.0.vcxproj -> C:\Users\Saidhbh\Documents\College Files\Final Project\CODE\access_control_v1.0\Debug\access_control_v1.0.exe
+﻿  AuthenticationInfo.cpp
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\TimeDate.h(9,1): error C2011: 'DateTime': 'class' type redefinition
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\TimeDate.h(8): message : see declaration of 'DateTime'
+  ConcreteAuthenticator1.cpp
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\TimeDate.h(9,1): error C2011: 'DateTime': 'class' type redefinition
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\TimeDate.h(8): message : see declaration of 'DateTime'
+  DeniedAccessLogger.cpp
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\TimeDate.h(9,1): error C2011: 'DateTime': 'class' type redefinition
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\TimeDate.h(8): message : see declaration of 'DateTime'
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\DeniedAccessLogger.cpp(19,27): error C2027: use of undefined type 'DateTime'
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\TimeDate.h(8): message : see declaration of 'DateTime'
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\DeniedAccessLogger.cpp(19,29): error C2039: 'getDate': is not a member of 'std::shared_ptr<DateTime>'
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\DeniedAccessLogger.h(18): message : see declaration of 'std::shared_ptr<DateTime>'
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\DeniedAccessLogger.cpp(20,27): error C2027: use of undefined type 'DateTime'
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\TimeDate.h(8): message : see declaration of 'DateTime'
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\DeniedAccessLogger.cpp(20,29): error C2039: 'getTime': is not a member of 'std::shared_ptr<DateTime>'
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\DeniedAccessLogger.h(18): message : see declaration of 'std::shared_ptr<DateTime>'
+  LoggerAbs.cpp
+  main.cpp
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\TimeDate.h(9,1): error C2011: 'DateTime': 'class' type redefinition
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\TimeDate.h(8): message : see declaration of 'DateTime'
+  TimeDate.cpp
+  SystemAccessLogger.cpp
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\TimeDate.h(9,1): error C2011: 'DateTime': 'class' type redefinition
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\TimeDate.h(8): message : see declaration of 'DateTime'
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\SystemAccessLogger.cpp(19,27): error C2027: use of undefined type 'DateTime'
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\TimeDate.h(8): message : see declaration of 'DateTime'
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\SystemAccessLogger.cpp(19,29): error C2039: 'getDate': is not a member of 'std::shared_ptr<DateTime>'
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\SystemAccessLogger.h(18): message : see declaration of 'std::shared_ptr<DateTime>'
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\SystemAccessLogger.cpp(20,27): error C2027: use of undefined type 'DateTime'
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\TimeDate.h(8): message : see declaration of 'DateTime'
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\SystemAccessLogger.cpp(20,29): error C2039: 'getTime': is not a member of 'std::shared_ptr<DateTime>'
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\SystemAccessLogger.h(18): message : see declaration of 'std::shared_ptr<DateTime>'
+  SystemLogin.cpp
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\TimeDate.h(9,1): error C2011: 'DateTime': 'class' type redefinition
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v1.0\access_control_v1.0\TimeDate.h(8): message : see declaration of 'DateTime'
+  Generating Code...

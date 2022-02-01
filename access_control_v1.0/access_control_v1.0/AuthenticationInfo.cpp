@@ -63,10 +63,11 @@ bool AuthenticationInfo::validateUser(string name, string pass)
 
 void AuthenticationInfo::setLogger(LoggerTypeEnum logType)
 {
+	//string loc_fileDate = ptr_fileDate->getFileDate();
 	switch (logType)
 	{
 	case LoggerTypeEnum::SYSTEM_ACCESS:
-		logger = make_shared<SystemAccessLogger>(SYSTEM_ACCESS_LOGGER);
+		logger = make_shared<SystemAccessLogger>(SYSTEM_ACCESS_LOGGER); //loc_fileDate + 
 		break;
 	case LoggerTypeEnum::DENIED_ACCESS:
 		logger = make_shared<DeniedAccessLogger>(DENIED_ACCESS_LOGGER);

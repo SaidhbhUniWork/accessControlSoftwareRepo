@@ -6,11 +6,11 @@
 #include <fstream>
 #include <sstream>
 
+#include "TimeDate.h"
 #include "Types.h"
 #include "SystemAccessLogger.h"
 #include "DeniedAccessLogger.h"
 #include "LoggerTypeEnum.h"
-#include "TimeDate.h"
 
 using namespace std;
 
@@ -24,6 +24,7 @@ private:
 	map<string, string> userMap;
 protected:
 	shared_ptr<LoggerAbs> logger;
+	//DateTime ptr_fileDate;
 public:
 	
 	AuthenticationInfo(const string p_filename);
