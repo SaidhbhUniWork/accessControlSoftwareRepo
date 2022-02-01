@@ -24,7 +24,7 @@ private:
 	map<string, string> userMap;
 protected:
 	shared_ptr<LoggerAbs> logger;
-	//DateTime ptr_fileDate;
+	DateTime cl_fileDate;
 public:
 	
 	AuthenticationInfo(const string p_filename);

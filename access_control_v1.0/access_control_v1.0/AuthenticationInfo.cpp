@@ -63,14 +63,14 @@ bool AuthenticationInfo::validateUser(string name, string pass)
 
 void AuthenticationInfo::setLogger(LoggerTypeEnum logType)
 {
-	//string loc_fileDate = ptr_fileDate->getFileDate();
+	string loc_fileDate = cl_fileDate.getFileDate();
 	switch (logType)
 	{
 	case LoggerTypeEnum::SYSTEM_ACCESS:
-		logger = make_shared<SystemAccessLogger>(SYSTEM_ACCESS_LOGGER); //loc_fileDate + 
+		logger = make_shared<SystemAccessLogger>(loc_fileDate + SYSTEM_ACCESS_LOGGER);
 		break;
 	case LoggerTypeEnum::DENIED_ACCESS:
-		logger = make_shared<DeniedAccessLogger>(DENIED_ACCESS_LOGGER);
+		logger = make_shared<DeniedAccessLogger>(loc_fileDate + DENIED_ACCESS_LOGGER);
 		break;
 	default:
 		cout << "No log" << endl;
