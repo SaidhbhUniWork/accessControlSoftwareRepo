@@ -2,11 +2,11 @@
 #include "CompositeRole.h"
 class ExecuteAccessBuilder : public CompositeRole
 {
+protected:
+	std::string accessNamePart = "Execute Access";
+	AccessTypeEnum accessLevelPart = AccessTypeEnum::E;
 public:
-	ExecuteAccessBuilder()
-	{
-		this->accessName = "Execute Access";
-		this->accessLevel = AccessTypeEnum::E;
-	}
+	ExecuteAccessBuilder() {}
+	AccessTypeEnum returnCompositeRole();
 };
 

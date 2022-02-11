@@ -2,11 +2,11 @@
 #include "CompositeRole.h"
 class NoAccessBuilder : public CompositeRole
 {
+protected:
+	std::string accessNamePart = "No Access";
+	AccessTypeEnum accessLevelPart = AccessTypeEnum::E;
 public:
-	NoAccessBuilder()
-	{
-		this->accessName = "No Access";
-		this->accessLevel = AccessTypeEnum::NA;
-	}
+	NoAccessBuilder() {}
+	AccessTypeEnum returnCompositeRole();
 };
 

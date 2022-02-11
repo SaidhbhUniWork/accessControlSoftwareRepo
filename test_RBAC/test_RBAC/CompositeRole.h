@@ -6,12 +6,13 @@
 
 #include "Role.h"
 #include "accessTypeEnum.h"
+#include "CompositeRoleBuilder.h"
 
 class CompositeRole : public Role //npc
 {
 private:
 	std::shared_ptr<Role> ptr_compositeRole;
-	//std::string roleDecor;
+	CompositeRoleBuilder compBuilder;
 
 protected:
 	std::string accessName = "";

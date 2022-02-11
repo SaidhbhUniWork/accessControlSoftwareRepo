@@ -1,12 +1,14 @@
 #pragma once
+
 #include "CompositeRole.h"
+
 class CopyAccessBuilder : public CompositeRole
 {
+protected:
+	std::string accessNamePart = "Copy Access";
+	AccessTypeEnum accessLevelPart = AccessTypeEnum::CO;
 public:
-	CopyAccessBuilder()
-	{
-		this->accessName = "Copy Access";
-		this->accessLevel = AccessTypeEnum::CO;
-	}
+	CopyAccessBuilder() {}
+	AccessTypeEnum returnCompositeRole();
 };
 

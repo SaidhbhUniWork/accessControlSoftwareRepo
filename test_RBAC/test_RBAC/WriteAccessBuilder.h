@@ -2,11 +2,11 @@
 #include "CompositeRole.h"
 class WriteAccessBuilder : public CompositeRole
 {
+protected:
+	std::string accessNamePart = "Write Access";
+	AccessTypeEnum accessLevelPart = AccessTypeEnum::E;
 public:
-	WriteAccessBuilder()
-	{
-		this->accessName = "Write Access";
-		this->accessLevel = AccessTypeEnum::W;
-	}
+	WriteAccessBuilder() {}
+	AccessTypeEnum returnCompositeRole();
 };
 

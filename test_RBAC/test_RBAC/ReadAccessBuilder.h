@@ -5,11 +5,11 @@
 
 class ReadAccessBuilder : public CompositeRole
 {
+protected:
+	std::string accessNamePart = "Read Access";
+	AccessTypeEnum accessLevelPart = AccessTypeEnum::E;
 public:
-	ReadAccessBuilder()
-	{
-		this->accessName = "Read Access";
-		this->accessLevel = AccessTypeEnum::R;
-	}
+	ReadAccessBuilder() {}
+	AccessTypeEnum returnCompositeRole();
 };
 
