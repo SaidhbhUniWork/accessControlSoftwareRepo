@@ -16,6 +16,7 @@ void SystemLogin::getSystemLogin()
 
 uint16_t SystemLogin::authenticateLogin(Subject& sub)
 {
-	uint16_t authLevel = authenticate.authenticate(sub);
+	authenticate = std::make_shared<ConcreteAuthenticator1>();
+	uint16_t authLevel = authenticate->authenticate(sub);
 	return authLevel;
 }

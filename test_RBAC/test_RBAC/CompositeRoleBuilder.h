@@ -13,6 +13,6 @@ protected:
 
 public:
 	~CompositeRoleBuilder() {}
-	void buildRole(std::shared_ptr<CompositeRole>);
-	AccessTypeEnum returnCompositerole();
+	void buildRole(std::shared_ptr<CompositeRole> thisRole);
+	AccessTypeEnum returnCompositeRole();
 };
