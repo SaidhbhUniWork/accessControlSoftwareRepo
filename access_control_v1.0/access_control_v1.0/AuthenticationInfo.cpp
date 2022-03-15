@@ -2,19 +2,16 @@
 
 AuthenticationInfo::AuthenticationInfo(const string p_filename)
 {
-	try
-	{
+	try {
 		if_inFile.open(p_filename, ios::in);
-		while (getline(if_inFile, s_fileLine))
-		{
+		while (getline(if_inFile, s_fileLine)) {
 			istringstream iss(s_fileLine);
 			iss >> s_unameAuth >> s_pwordAuth;
 			userMap[s_unameAuth] = s_pwordAuth;
 		}
 		if_inFile.close();
 	}
-	catch (exception e)
-	{
+	catch (exception e) {
 		cerr << AUTH_INFO_OPEN_ERROR << e.what() << endl;
 	}
 
@@ -22,19 +19,15 @@ AuthenticationInfo::AuthenticationInfo(const string p_filename)
 
 AuthenticationInfo::~AuthenticationInfo()
 {
-	try
-	{
-		if (!if_inFile.fail())
-		{
+	try {
+		if (!if_inFile.fail()) {
 			if_inFile.close();
 		}
-		for (size_t index = 0; index < userMap.size(); index++)
-		{
+		for (size_t index = 0; index < userMap.size(); index++) {
 			userMap.clear();
 		}
 	}
-	catch (exception e)
-	{
+	catch (exception e) {
 		cerr << AUTH_INFO_CLOSE_ERROR << e.what() << endl;
 	}
 }
@@ -44,17 +37,14 @@ bool AuthenticationInfo::validateUser(string name, string pass)
 	bool valid = false;
 	map<string, string>::iterator it;
 	it = userMap.find(name);
-	if (it != userMap.end())
-	{
-		if (!(it->second.compare(pass)))
-		{
+	if (it != userMap.end()) {
+		if (!(it->second.compare(pass))) {
 			setLogger(LoggerTypeEnum::SYSTEM_ACCESS);
 			logger->createLog(name);
 			valid = true;
 		}
 	}
-	if(!valid)
-	{
+	if(!valid) {
 		setLogger(LoggerTypeEnum::DENIED_ACCESS);
 		logger->createLog(name);
 	}
@@ -64,10 +54,9 @@ bool AuthenticationInfo::validateUser(string name, string pass)
 void AuthenticationInfo::setLogger(LoggerTypeEnum logType)
 {
 	string loc_fileDate = cl_fileDate.getFileDate();
-	switch (logType)
-	{
+	switch (logType) {
 	case LoggerTypeEnum::SYSTEM_ACCESS:
-		logger = make_shared<SystemAccessLogger>(loc_fileDate + SYSTEM_ACCESS_LOGGER);
+		logger = make_shared<SystemAccessLogger>(loc_fileDate + SYSTEM_ACCESS_LOGGER); // creates unique filename for current date
 		break;
 	case LoggerTypeEnum::DENIED_ACCESS:
 		logger = make_shared<DeniedAccessLogger>(loc_fileDate + DENIED_ACCESS_LOGGER);

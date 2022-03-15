@@ -1,22 +1,6 @@
 ﻿  CompositeRoleBuilder.cpp
-C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRoleBuilder.h(9,1): error C2504: 'CompositeRole': base class undefined
-C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRoleBuilder.h(11,18): error C2065: 'CompositeRole': undeclared identifier
-C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRoleBuilder.h(11,7): error C2923: 'std::shared_ptr': 'CompositeRole' is not a valid template type argument for parameter '_Ty'
-C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRoleBuilder.h(12,18): error C2065: 'CompositeRole': undeclared identifier
-C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRoleBuilder.h(12,7): error C2923: 'std::shared_ptr': 'CompositeRole' is not a valid template type argument for parameter '_Ty'
-C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRoleBuilder.h(16,33): error C2065: 'CompositeRole': undeclared identifier
-C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRoleBuilder.h(16,22): error C2923: 'std::shared_ptr': 'CompositeRole' is not a valid template type argument for parameter '_Ty'
-C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRoleBuilder.h(17,36): error C3646: 'returnCompositerole': unknown override specifier
-C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRoleBuilder.h(17,36): error C2059: syntax error: '('
-C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRoleBuilder.h(17,38): error C2238: unexpected token(s) preceding ';'
-  CopyAccessBuilder.cpp
-C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRoleBuilder.h(9,1): error C2504: 'CompositeRole': base class undefined
-C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRoleBuilder.h(11,18): error C2065: 'CompositeRole': undeclared identifier
-C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRoleBuilder.h(11,7): error C2923: 'std::shared_ptr': 'CompositeRole' is not a valid template type argument for parameter '_Ty'
-C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRoleBuilder.h(12,18): error C2065: 'CompositeRole': undeclared identifier
-C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRoleBuilder.h(12,7): error C2923: 'std::shared_ptr': 'CompositeRole' is not a valid template type argument for parameter '_Ty'
-C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRoleBuilder.h(16,33): error C2065: 'CompositeRole': undeclared identifier
-C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRoleBuilder.h(16,22): error C2923: 'std::shared_ptr': 'CompositeRole' is not a valid template type argument for parameter '_Ty'
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRole.h(15,34): error C3646: 'compBuilder': unknown override specifier
+C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRole.h(15,34): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
   ExecuteAccessBuilder.cpp
 C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRoleBuilder.h(9,1): error C2504: 'CompositeRole': base class undefined
 C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_RBAC\test_RBAC\CompositeRoleBuilder.h(11,18): error C2065: 'CompositeRole': undeclared identifier

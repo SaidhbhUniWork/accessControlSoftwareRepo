@@ -1,0 +1,12 @@
+﻿  CompositeRole.cpp
+  Execute.cpp
+  FullAccess.cpp
+  Main.cpp
+  Read.cpp
+  Role.cpp
+  RoleBuilder.cpp
+  SimpleRole.cpp
+  Subject.cpp
+  Write.cpp
+  Generating Code...
+  test_compositeBuilderPattern_March8th_beg.vcxproj -> C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\test_compositeBuilderPattern_March8th_beg\Debug\test_compositeBuilderPattern_March8th_beg.exe

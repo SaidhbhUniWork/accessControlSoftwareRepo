@@ -3,7 +3,7 @@
 #include <iostream>
 #include <memory>
 
-//#include "CompositeRole.h"
+#include "CompositeRole.h"
 
 class CompositeRoleBuilder : public CompositeRole
 {
