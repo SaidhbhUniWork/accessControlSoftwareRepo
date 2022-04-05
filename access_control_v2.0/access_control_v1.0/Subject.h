@@ -24,7 +24,7 @@ private:
 	string s_username = "";
 	string s_password = "";
 	bool isAuthenticated = false;
-	uint16_t subjectAuth;
+	uint16_t subjectAuth = 0;
 	vector<AuthEnum> subjectAuthorizationVector;
 	string uname;	// TODO check if needed
 	vector<vector<uint16_t>> v_privilegeVector;

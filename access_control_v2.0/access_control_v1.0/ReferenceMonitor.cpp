@@ -43,7 +43,6 @@ void ReferenceMonitor::objectTypeSelection() {
 		cout << "Incorrect file type, please select 1 - 4 : ";
 		cin >> uint_objectRequestType;
 	}
-	cout << (uint16_t)(ReferenceMonitorEnum::FILE1) << endl;
 
 	switch (uint_objectRequestType)
 	{

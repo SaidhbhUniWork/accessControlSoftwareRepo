@@ -13,10 +13,10 @@ using namespace std;
 class ReferenceMonitor
 {
 private:
-	uint16_t uint_objectRequestType;
+	uint16_t uint_objectRequestType = 0;
 	ifstream if_inFile;
 	string s_fileName = "accessMatrix.txt";
-	string s_fileLine;
+	string s_fileLine = "";
 	vector<vector<AuthEnum>> vect_accessMatrixVector;
 public:
 	ReferenceMonitor();
