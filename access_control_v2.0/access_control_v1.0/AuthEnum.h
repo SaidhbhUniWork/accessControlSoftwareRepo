@@ -3,11 +3,13 @@
 enum class AuthEnum
 {
 	NONE = 0,
-	ADMIN = 1,
-	USER = 2,
-	R = 4,
-	W = 8,
-	E = 16,
-	FA = 32,
-	AD = 64
+	HIGH = 1,
+	MED = 2,
+	LOW = 4,
+
+	R = 8,
+	W = 16,
+	E = 32,
+	FA = 64,
+	AD = 128
 };

@@ -1,3 +1,0 @@
-FA,	FA,	FA
-E | R,	E | R,	E | R | W
-R,	R,	R | E

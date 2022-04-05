@@ -21,6 +21,7 @@ private:
 	map<string, uint16_t> map_roleMap;
 protected:
 	uint16_t _authLevel;
+	vector<AuthEnum> authorizationVector;
 public:
 	SimpleRole(string name, shared_ptr<Role> auth = nullptr);
 	uint16_t returnAuthLevelFromRole() { return _authLevel; }

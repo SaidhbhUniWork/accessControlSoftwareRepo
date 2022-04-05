@@ -19,7 +19,8 @@ SimpleRole::SimpleRole(string uname, shared_ptr<Role> role) : RoleBuilder(move(r
 	it = map_roleMap.find(uname);
 	if (it != map_roleMap.end()) {
 		if (!(it->first.compare(uname))) {
-			this->_authLevel = it->second;
+			this->_authLevel = it->second; // TODO vector permissions
+			this->authorizationVector.push_back((AuthEnum)_authLevel);
 		}
 	}
 }
@@ -42,5 +43,6 @@ SimpleRole::~SimpleRole(void) {
 int SimpleRole::getRole(int role) {
 	cout << "Simple Role : " << _authLevel << endl;
 	_authLevel += role;
+	authorizationVector.push_back((AuthEnum)role);
 	return RoleBuilder::getRole(_authLevel);
 }

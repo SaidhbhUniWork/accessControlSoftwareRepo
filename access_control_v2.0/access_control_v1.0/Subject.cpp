@@ -56,7 +56,7 @@ void Subject::authorizeSubject() {
 void Subject::simpleAuthorisation(string uname) {
 
 	buildRole = make_shared<SimpleRole>(uname, rolePtr);
-	this->subjectAuth = buildRole->returnAuthLevelFromRole();
+	this->subjectAuth = buildRole->returnAuthLevelFromRole();	// TODO vector permissions
 }
 
 void Subject::privilegeAuthorisation() {
@@ -97,24 +97,24 @@ void Subject::privilegeAuthorisation() {
 
 void Subject::allocatePrivileges(uint16_t bitwiseOption) {
 
-	if (bitwiseOption & 32) {
+	if (bitwiseOption & 64) {
 		buildRole = make_shared<FullAccess>(rolePtr);
 		rolePtr = buildRole;
 	}
 	else {
-		if (bitwiseOption & 4) {
+		if (bitwiseOption & 8) {
 			buildRole = make_shared<ReadAccess>(rolePtr);
 			rolePtr = buildRole;
 		}
-		if (bitwiseOption & 8) {
+		if (bitwiseOption & 16) {
 			buildRole = make_shared<WriteAccess>(rolePtr);
 			rolePtr = buildRole;
 		}
-		if (bitwiseOption & 16) {
+		if (bitwiseOption & 32) {
 			buildRole = make_shared<ExecuteAccess>(rolePtr);
 			rolePtr = buildRole;
 		}
-		if (bitwiseOption & 64) {
+		if (bitwiseOption & 128) {
 			buildRole = make_shared<AdminAccess>(rolePtr);
 			rolePtr = buildRole;
 		}
@@ -142,18 +142,27 @@ void Subject::loadPrivilegesFromFile()	// TODO: - try move code to constructor?
 }
 
 void Subject::enhanceSubjectPrivileges(AuthEnum p_newAuth) {
-	//buildRole = make_shared<CompositeRole>();
-	//rolePtr = buildRole;
+	buildRole = make_shared<CompositeRole>();
+	rolePtr = buildRole;
 
 	allocatePrivileges((uint16_t)p_newAuth);
-	setAuthorisation(rolePtr->getRole((uint16_t)AuthEnum::NONE));
+	setEnhancedAuthorisation(rolePtr->getRole((uint16_t)AuthEnum::NONE));
+	//setAuthorisation(rolePtr->getRole((uint16_t)AuthEnum::NONE));
 	cout << getAuthorisation() << endl;
 }
 
 void Subject::setAuthorisation(uint16_t subjectAuth) {
 	this->subjectAuth = subjectAuth;
+	this->subjectAuthorizationVector.push_back((AuthEnum)subjectAuth);
+}
+
+void Subject::setEnhancedAuthorisation(uint16_t enhancedAuth) {
+	this->subjectAuth += enhancedAuth;
+	subjectAuthorizationVector.clear();
+	this->subjectAuthorizationVector.push_back((AuthEnum)subjectAuth);
+
 }
 
 uint16_t Subject::getAuthorisation() {
-	return this->subjectAuth;
+	return this->subjectAuth;	// TODO vector permissions
 }

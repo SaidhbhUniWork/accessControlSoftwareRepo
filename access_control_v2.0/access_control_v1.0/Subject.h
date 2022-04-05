@@ -24,6 +24,7 @@ private:
 	string s_password = "";
 	bool isAuthenticated = false;
 	uint16_t subjectAuth;
+	vector<AuthEnum> subjectAuthorizationVector;
 	string uname;	// TODO check if needed
 	vector<vector<uint16_t>> v_privilegeVector;
 	string s_fileLine;
@@ -51,6 +52,7 @@ public:
 	void loadPrivilegesFromFile();
 	void enhanceSubjectPrivileges(AuthEnum newAuth);
 	void setAuthorisation(uint16_t subAuth);
+	void setEnhancedAuthorisation(uint16_t enhancedAuth);
 	uint16_t getAuthorisation();
 };
 

@@ -1,5 +1,6 @@
 #pragma once
 #include "Role.h"
+#include "AuthEnum.h"
 #include <memory>
 #include <string>
 #include <iostream>

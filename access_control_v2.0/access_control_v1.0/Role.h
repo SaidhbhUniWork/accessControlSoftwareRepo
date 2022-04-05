@@ -3,11 +3,15 @@
 #include <memory>
 #include <string>
 #include <iostream>
+#include <vector>
+#include "AuthEnum.h"
 
 using namespace std;
 
 class Role
 {
+protected:
+	vector<AuthEnum> authorizationVector;
 public:
 	int _authLevel = 0;
 	//int getAuth();

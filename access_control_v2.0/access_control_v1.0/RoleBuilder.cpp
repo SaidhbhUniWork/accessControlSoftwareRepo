@@ -11,6 +11,7 @@ RoleBuilder::~RoleBuilder(void) {
 int RoleBuilder::getRole(int role) {
 	cout << "Adding role builder Authorisation" << endl;
 	_authLevel += role;
+	authorizationVector.push_back((AuthEnum)role);
 	return _auth->getRole(_authLevel);
 }
 

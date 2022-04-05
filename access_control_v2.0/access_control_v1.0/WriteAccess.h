@@ -11,6 +11,7 @@ class WriteAccess : public RoleBuilder
 {
 private:
 	int _authLevel;
+	vector<AuthEnum> authorizationVector;
 public:
 	WriteAccess(shared_ptr<Role> auth = nullptr);
 	~WriteAccess(void);

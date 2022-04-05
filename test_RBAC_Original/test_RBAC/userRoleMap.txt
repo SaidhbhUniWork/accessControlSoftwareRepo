@@ -1,6 +1,0 @@
-admin 1
-user1 2
-user2 2
-user3 4
-user4 4
-user5 4

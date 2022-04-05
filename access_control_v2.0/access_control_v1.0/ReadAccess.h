@@ -4,6 +4,7 @@
 #include <memory>
 #include <string>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -11,6 +12,7 @@ class ReadAccess : public RoleBuilder
 {
 private:
 	int _authLevel;
+	vector<AuthEnum> authorizationVector;
 public:
 	ReadAccess(shared_ptr<Role> auth = nullptr);
 	~ReadAccess(void);

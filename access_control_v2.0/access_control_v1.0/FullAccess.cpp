@@ -12,5 +12,6 @@ FullAccess::~FullAccess(void) {
 int FullAccess::getRole(int role) {
 	cout << "Full Access : " << _authLevel << endl;
 	_authLevel += role;
+	authorizationVector.push_back((AuthEnum)role);
 	return RoleBuilder::getRole(_authLevel);
 }

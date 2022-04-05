@@ -1,6 +1,5 @@
 
 #include <iostream>
-//#include "Subject.h"
 #include "SystemLogin.h"
 
 
