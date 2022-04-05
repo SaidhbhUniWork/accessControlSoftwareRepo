@@ -36,11 +36,6 @@ void Subject::authenticateSubject()
 
 void Subject::authorizeSubject() {
 
-	//int aggregateRole = 0;
-	//cout << "Enter Role : ";
-	//cin >> aggregateRole;
-	//cout << "Username : ";
-	//cin >> uname;
 	uint16_t defaultRole = (uint16_t)(AuthEnum::NONE);
 
 	buildRole = make_shared<CompositeRole>();
@@ -70,59 +65,40 @@ void Subject::privilegeAuthorisation() {
 		}
 	}
 	allocatePrivileges(aggregateRole);
-
-	/*if (aggregateRole & 32) {
-		buildRole = make_shared<FullAccess>(rolePtr);
-		rolePtr = buildRole;
-	}
-	else {
-		if (aggregateRole & 4) {
-			buildRole = make_shared<ReadAccess>(rolePtr);
-			rolePtr = buildRole;
-		}
-		if (aggregateRole & 8) {
-			buildRole = make_shared<WriteAccess>(rolePtr);
-			rolePtr = buildRole;
-		}
-		if (aggregateRole & 16) {
-			buildRole = make_shared<ExecuteAccess>(rolePtr);
-			rolePtr = buildRole;
-		}
-		if (aggregateRole & 64) {
-			buildRole = make_shared<AdminAccess>(rolePtr);
-			rolePtr = buildRole;
-		}
-	}*/
 }
 
 void Subject::allocatePrivileges(uint16_t bitwiseOption) {
 
-	if (bitwiseOption & 64) {
+	if (bitwiseOption & 128) {
 		buildRole = make_shared<FullAccess>(rolePtr);
 		rolePtr = buildRole;
 	}
 	else {
 		if (bitwiseOption & 8) {
-			buildRole = make_shared<ReadAccess>(rolePtr);
+			buildRole = make_shared<NoAccess>(rolePtr);
 			rolePtr = buildRole;
 		}
 		if (bitwiseOption & 16) {
-			buildRole = make_shared<WriteAccess>(rolePtr);
+			buildRole = make_shared<ReadAccess>(rolePtr);
 			rolePtr = buildRole;
 		}
 		if (bitwiseOption & 32) {
+			buildRole = make_shared<WriteAccess>(rolePtr);
+			rolePtr = buildRole;
+		}
+		if (bitwiseOption & 64) {
 			buildRole = make_shared<ExecuteAccess>(rolePtr);
 			rolePtr = buildRole;
 		}
-		if (bitwiseOption & 128) {
+		if (bitwiseOption & 256) {
 			buildRole = make_shared<AdminAccess>(rolePtr);
 			rolePtr = buildRole;
 		}
 	}
 }
 
-void Subject::loadPrivilegesFromFile()	// TODO: - try move code to constructor?
-{
+void Subject::loadPrivilegesFromFile() {	// TODO: - try move code to constructor?
+
 	vector<uint16_t> localVect;
 	try {
 		uint16_t num;
@@ -142,12 +118,12 @@ void Subject::loadPrivilegesFromFile()	// TODO: - try move code to constructor?
 }
 
 void Subject::enhanceSubjectPrivileges(AuthEnum p_newAuth) {
+
 	buildRole = make_shared<CompositeRole>();
 	rolePtr = buildRole;
 
 	allocatePrivileges((uint16_t)p_newAuth);
 	setEnhancedAuthorisation(rolePtr->getRole((uint16_t)AuthEnum::NONE));
-	//setAuthorisation(rolePtr->getRole((uint16_t)AuthEnum::NONE));
 	cout << getAuthorisation() << endl;
 }
 

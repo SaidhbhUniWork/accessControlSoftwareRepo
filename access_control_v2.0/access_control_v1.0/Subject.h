@@ -14,6 +14,7 @@
 #include "WriteAccess.h"
 #include "FullAccess.h"
 #include "AdminAccess.h"
+#include "NoAccess.h"
 
 using namespace std;
 

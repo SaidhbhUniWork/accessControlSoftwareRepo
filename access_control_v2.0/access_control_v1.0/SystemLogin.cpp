@@ -7,6 +7,7 @@ void SystemLogin::mainLogin()
 	getSystemLogin();
 	subject.authorizeSubject();
 	subject.enhanceSubjectPrivileges(AuthEnum::AD);
+	reference.objectTypeSelection();
 }
 
 void SystemLogin::getSystemLogin()

@@ -5,11 +5,13 @@
 #include <memory>
 #include "Subject.h"
 #include "ConcreteAuthenticator1.h"
+#include "ReferenceMonitor.h"
 
 class SystemLogin
 {
 private:
 	Subject subject;
+	ReferenceMonitor reference;
 	std::shared_ptr<AuthenticatorAbs> authenticate;
 
 public:

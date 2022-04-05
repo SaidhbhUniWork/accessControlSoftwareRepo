@@ -149,7 +149,9 @@
     <ClCompile Include="FullAccess.cpp" />
     <ClCompile Include="LoggerAbs.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="NoAccess.cpp" />
     <ClCompile Include="ReadAccess.cpp" />
+    <ClCompile Include="ReferenceMonitor.cpp" />
     <ClCompile Include="Role.cpp" />
     <ClCompile Include="RoleBuilder.cpp" />
     <ClCompile Include="SimpleRole.cpp" />
@@ -169,9 +171,12 @@
     <ClInclude Include="DeniedAccessLogger.h" />
     <ClInclude Include="ExecuteAccess.h" />
     <ClInclude Include="FullAccess.h" />
+    <ClInclude Include="ReferenceMonitorEnum.h" />
     <ClInclude Include="LoggerAbs.h" />
     <ClInclude Include="LoggerTypeEnum.h" />
+    <ClInclude Include="NoAccess.h" />
     <ClInclude Include="ReadAccess.h" />
+    <ClInclude Include="ReferenceMonitor.h" />
     <ClInclude Include="Role.h" />
     <ClInclude Include="RoleBuilder.h" />
     <ClInclude Include="SimpleRole.h" />
