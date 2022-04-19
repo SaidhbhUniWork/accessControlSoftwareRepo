@@ -18,6 +18,67 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IncludeFiles\AdminAccess.h" />
+    <ClInclude Include="IncludeFiles\AuthenticationInfo.h" />
+    <ClInclude Include="IncludeFiles\AuthenticatorAbs.h" />
+    <ClInclude Include="IncludeFiles\AuthEnum.h" />
+    <ClInclude Include="IncludeFiles\CompositeRole.h" />
+    <ClInclude Include="IncludeFiles\ConcreteAuthenticator1.h" />
+    <ClInclude Include="IncludeFiles\ConcreteReferenceMonitor.h" />
+    <ClInclude Include="IncludeFiles\DeniedAccessLogger.h" />
+    <ClInclude Include="IncludeFiles\ExecuteAccess.h" />
+    <ClInclude Include="IncludeFiles\FileAccessRequest.h" />
+    <ClInclude Include="IncludeFiles\FileType1.h" />
+    <ClInclude Include="IncludeFiles\FileType2.h" />
+    <ClInclude Include="IncludeFiles\FileType3.h" />
+    <ClInclude Include="IncludeFiles\FileType4.h" />
+    <ClInclude Include="IncludeFiles\FullAccess.h" />
+    <ClInclude Include="IncludeFiles\LoggerAbs.h" />
+    <ClInclude Include="IncludeFiles\LoggerTypeEnum.h" />
+    <ClInclude Include="IncludeFiles\NoAccess.h" />
+    <ClInclude Include="IncludeFiles\ReadAccess.h" />
+    <ClInclude Include="IncludeFiles\ReferenceMonitor.h" />
+    <ClInclude Include="IncludeFiles\ReferenceMonitorEnum.h" />
+    <ClInclude Include="IncludeFiles\Role.h" />
+    <ClInclude Include="IncludeFiles\RoleBuilder.h" />
+    <ClInclude Include="IncludeFiles\SimpleRole.h" />
+    <ClInclude Include="IncludeFiles\Subject.h" />
+    <ClInclude Include="IncludeFiles\SystemAccessLogger.h" />
+    <ClInclude Include="IncludeFiles\SystemLogin.h" />
+    <ClInclude Include="IncludeFiles\TimeDate.h" />
+    <ClInclude Include="IncludeFiles\Types.h" />
+    <ClInclude Include="IncludeFiles\WriteAccess.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SourceFiles\AdminAccess.cpp" />
+    <ClCompile Include="SourceFiles\AuthenticationInfo.cpp" />
+    <ClCompile Include="SourceFiles\AuthenticatorAbs.cpp" />
+    <ClCompile Include="SourceFiles\CompositeRole.cpp" />
+    <ClCompile Include="SourceFiles\ConcreteAuthenticator1.cpp" />
+    <ClCompile Include="SourceFiles\ConcreteReferenceMonitor.cpp" />
+    <ClCompile Include="SourceFiles\DeniedAccessLogger.cpp" />
+    <ClCompile Include="SourceFiles\ExecuteAccess.cpp" />
+    <ClCompile Include="SourceFiles\FileAccessRequest.cpp" />
+    <ClCompile Include="SourceFiles\FileType1.cpp" />
+    <ClCompile Include="SourceFiles\FileType2.cpp" />
+    <ClCompile Include="SourceFiles\FileType3.cpp" />
+    <ClCompile Include="SourceFiles\FileType4.cpp" />
+    <ClCompile Include="SourceFiles\FullAccess.cpp" />
+    <ClCompile Include="SourceFiles\LoggerAbs.cpp" />
+    <ClCompile Include="SourceFiles\main.cpp" />
+    <ClCompile Include="SourceFiles\NoAccess.cpp" />
+    <ClCompile Include="SourceFiles\ReadAccess.cpp" />
+    <ClCompile Include="SourceFiles\ReferenceMonitor.cpp" />
+    <ClCompile Include="SourceFiles\Role.cpp" />
+    <ClCompile Include="SourceFiles\RoleBuilder.cpp" />
+    <ClCompile Include="SourceFiles\SimpleRole.cpp" />
+    <ClCompile Include="SourceFiles\Subject.cpp" />
+    <ClCompile Include="SourceFiles\SystemAccessLogger.cpp" />
+    <ClCompile Include="SourceFiles\SystemLogin.cpp" />
+    <ClCompile Include="SourceFiles\TimeDate.cpp" />
+    <ClCompile Include="SourceFiles\WriteAccess.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -88,10 +149,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v2.0\access_control_v1.0;C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v2.0\access_control_v1.0\SourceFiles;C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v2.0\access_control_v1.0\IncludeFiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v2.0\access_control_v1.0;C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v2.0\access_control_v1.0\SourceFiles;C:\Users\Saidhbh\Documents\College Files\Final Project\accessControlSoftwareRepo\access_control_v2.0\access_control_v1.0\IncludeFiles;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -138,55 +201,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="AdminAccess.cpp" />
-    <ClCompile Include="AuthenticationInfo.cpp" />
-    <ClCompile Include="AuthenticatorAbs.cpp" />
-    <ClCompile Include="CompositeRole.cpp" />
-    <ClCompile Include="ConcreteAuthenticator1.cpp" />
-    <ClCompile Include="DeniedAccessLogger.cpp" />
-    <ClCompile Include="ExecuteAccess.cpp" />
-    <ClCompile Include="FullAccess.cpp" />
-    <ClCompile Include="LoggerAbs.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="NoAccess.cpp" />
-    <ClCompile Include="ReadAccess.cpp" />
-    <ClCompile Include="ReferenceMonitor.cpp" />
-    <ClCompile Include="Role.cpp" />
-    <ClCompile Include="RoleBuilder.cpp" />
-    <ClCompile Include="SimpleRole.cpp" />
-    <ClCompile Include="TimeDate.cpp" />
-    <ClCompile Include="Subject.cpp" />
-    <ClCompile Include="SystemAccessLogger.cpp" />
-    <ClCompile Include="SystemLogin.cpp" />
-    <ClCompile Include="WriteAccess.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="AdminAccess.h" />
-    <ClInclude Include="AuthenticationInfo.h" />
-    <ClInclude Include="AuthenticatorAbs.h" />
-    <ClInclude Include="AuthEnum.h" />
-    <ClInclude Include="CompositeRole.h" />
-    <ClInclude Include="ConcreteAuthenticator1.h" />
-    <ClInclude Include="DeniedAccessLogger.h" />
-    <ClInclude Include="ExecuteAccess.h" />
-    <ClInclude Include="FullAccess.h" />
-    <ClInclude Include="ReferenceMonitorEnum.h" />
-    <ClInclude Include="LoggerAbs.h" />
-    <ClInclude Include="LoggerTypeEnum.h" />
-    <ClInclude Include="NoAccess.h" />
-    <ClInclude Include="ReadAccess.h" />
-    <ClInclude Include="ReferenceMonitor.h" />
-    <ClInclude Include="Role.h" />
-    <ClInclude Include="RoleBuilder.h" />
-    <ClInclude Include="SimpleRole.h" />
-    <ClInclude Include="SystemAccessLogger.h" />
-    <ClInclude Include="TimeDate.h" />
-    <ClInclude Include="Types.h" />
-    <ClInclude Include="Subject.h" />
-    <ClInclude Include="SystemLogin.h" />
-    <ClInclude Include="WriteAccess.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
