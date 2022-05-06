@@ -1,0 +1,4 @@
+dave 2
+mary 1
+jane 4
+admin 256

@@ -1,3 +1,0 @@
-dave 2
-mary 1
-jane 4

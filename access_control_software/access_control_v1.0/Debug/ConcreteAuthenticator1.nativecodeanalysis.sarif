@@ -1,0 +1,681 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.28.29334.0"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x003EB1D0 -il C:\\Users\\Saidhbh\\AppData\\Local\\Temp\\_CL_0044c473ast -typedil -f SourceFiles\\ConcreteAuthenticator1.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829334 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -I C:\\Users\\Saidhbh\\Documents\\College Files\\Final Project\\accessControlSoftwareRepo\\access_control_v3_x32_v2\\access_control_v1.0\\IncludeFiles -I C:\\Users\\Saidhbh\\Documents\\College Files\\Final Project\\accessControlSoftwareRepo\\access_control_v3_x32_v2\\access_control_v1.0\\SourceFiles -I C:\\Users\\Saidhbh\\Documents\\College Files\\Final Project\\accessControlSoftwareRepo\\access_control_v3_x32_v2\\access_control_v1.0 -I C:\\Users\\Saidhbh\\Documents\\College Files\\Final Project\\accessControlSoftwareRepo\\access_control_v3_x32_v2\\Dependencies_OpenSSL\\include -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -FoDebug\\ConcreteAuthenticator1.obj -FdDebug\\vc142.pdb -Gd -analyze:projectdirectory C:\\Users\\Saidhbh\\Documents\\College Files\\Final Project\\accessControlSoftwareRepo\\access_control_v3_x32_v2\\access_control_v1.0 -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/sourcefiles/noaccess.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/noaccess.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/rolebuilder.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/role.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/authenum.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/sourcefiles/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/systemlogin.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/subject.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/base64_encode.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/encrypt.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/conf.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/macros.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/opensslconf.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/configuration.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/opensslv.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/bio.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/e_os2.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/crypto.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/safestack.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/stack.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/types.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/cryptoerr.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/symhacks.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/cryptoerr_legacy.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/core.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/bioerr.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/lhash.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/conferr.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/conftypes.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/evp.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/core_dispatch.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/evperr.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/params.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/bn.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/bnerr.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/objects.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/obj_mac.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/asn1.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/asn1err.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/objectserr.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/err.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/dependencies_openssl/include/openssl/aes.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/types.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/compositerole.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/simplerole.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/executeaccess.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/readaccess.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/writeaccess.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/fullaccess.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/adminaccess.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/concreteauthenticator1.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/authenticatorabs.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/authenticationinfo.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/timedate.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/systemaccesslogger.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/loggerabs.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/deniedaccesslogger.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/loggertypeenum.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/referencemonitor.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/referencemonitorenum.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/concretereferencemonitor.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/validation.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/systemloginmenus.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/loggerviewer.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/sourcefiles/loggerviewer.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/sourcefiles/loggerabs.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/sourcefiles/fullaccess.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/sourcefiles/filetype4.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/filetype4.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/fileaccessrequest.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/sourcefiles/filetype3.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/filetype3.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/sourcefiles/filetype2.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/filetype2.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/sourcefiles/filetype1.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/includefiles/filetype1.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/sourcefiles/fileaccessrequest.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/sourcefiles/executeaccess.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/Saidhbh/Documents/College Files/Final Project/accessControlSoftwareRepo/access_control_v3_x32_v2/access_control_v1.0/SourceFiles/Encrypt.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/sourcefiles/deniedaccesslogger.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/sourcefiles/concretereferencemonitor.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/saidhbh/documents/college files/final project/accesscontrolsoftwarerepo/access_control_v3_x32_v2/access_control_v1.0/sourcefiles/concreteauthenticator1.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,3 +1,0 @@
-mary pass1
-dave pass2
-jane pass3
